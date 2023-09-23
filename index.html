@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap-training/style.css" />
+  </head>
+  <body>
+    <!-- Với bootstrap:
+        - .container tạo ra 1 container cố định chiều ngang và thay đổi theo responsive
+        - .container-fluid tạo ra một container với full width. Trải dài toàn bộ chiều ngang của khung hình -->
+    <div class="container">
+      <!--container này thay đổi được chiều dài của cửa sổ browser-->
+      <h1>My First Bootstrap Page</h1>
+      <p>This is some text</p>
+    </div>
+
+    <div class="container-fluid">
+      <!--container này không thay đổi được chiều dài của cửa sổ browser-->
+      <h1>My First Bootstrap Page</h1>
+      <p>This is some text</p>
+    </div>
+
+    <!-- Container padding là container bao gồm padding-top và bottom (default không có padding top-bottom) -->
+    <div class="container p-5 m-5 border">
+      <h1>My First Bootstrap Page</h1>
+      <p>
+        This is some text with padding large and margin large and has a border
+      </p>
+    </div>
+
+    <div class="container p-5 my-5 bg-dark text-white">
+      <h1>My First Bootstrap Page</h1>
+      <p>
+        This is some text padding large and margin large and has a border and
+        text red
+      </p>
+    </div>
+
+    <div class="container p-5 my-5 bg-primary text-white">
+      <h1>My First Bootstrap Page</h1>
+      <p>This is some text</p>
+    </div>
+
+    <!-- Có thể chọn các size của container để có thể xem max-width của container có size như thế nào với từng viewport -->
+    <div class="container-sm">.container-sm</div>
+    <div class="container-md">.container-md</div>
+    <div class="container-lg">.container-lg</div>
+    <div class="container-xl">.container-xl</div>
+    <div class="container-xxl">.container-xxl</div>
+
+    <!-- ================================================================ -->
+    <h1 class="pt-5">Bootstrap Grid System</h1>
+
+    <!-- Chiều ngang của 1 container sử dụng bằng flexbox được chia làm 12 cột -->
+
+    <!--
+        Có hai cách khai báo chia Grid System
+        1,
+        <div class="row">
+            <div class="col-*-*"></div>
+            <div class="col-*-*"></div>
+        </div>
+        * đầu tiên là size width của class (sm, md, lg,...)
+        * thứ 2 là số cột mong muốn miễn sao tổng số cột của tất cả các div <=12
+        2,
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        Cách này sẽ tự động chia chiều ngang của div cha thành số cột tương ứng với số div. 
+    -->
+
+    <div class="row">
+      <div class="col-sm-4">.col-sm-4</div>
+      <div class="col-sm-8">.col-sm-8</div>
+    </div>
+  </body>
+</html>
