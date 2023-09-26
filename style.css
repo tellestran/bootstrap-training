@@ -2,20 +2,33 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Mooli', sans-serif;
 }
 
 .part1{
+    display: flex;
     width: 20%;
     height: 100px;
     margin: 0.5%;
     float: left;
-    background-color: red;
+    background-color: #071E22;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px
+
 }
 
 .part2{
+    display: flex;
     width: 77%;
     float: left;
     height: 100px;
     margin: 0.5%;
-    background-color: blue;
+    background-color: #f4c095;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
